@@ -1,0 +1,2098 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TJ8DFDN6');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dr.core採用ページ</title>
+  <meta name="description" content="Dr.coreでは現在仲間を募集中です！Dr.coreのビジョンや強みをまずはチェックしてみてください！まずは気軽にお話をしましょう！">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Dr.core">
+  <meta property="og:title" content="Dr.core採用ページ">
+  <meta property="og:description" content="Dr.coreでは現在仲間を募集中です！Dr.coreのビジョンや強みをまずはチェックしてみてください！まずは気軽にお話をしましょう！">
+  <meta property="og:image" content="https://drcorelp-fbme6wzk.manus.space/manus-storage/recruit-fv_a582f1b9.png">
+  <meta property="og:image:alt" content="Dr.core採用ページ">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dr.core採用ページ">
+  <meta name="twitter:description" content="Dr.coreでは現在仲間を募集中です！Dr.coreのビジョンや強みをまずはチェックしてみてください！まずは気軽にお話をしましょう！">
+  <meta name="twitter:image" content="https://drcorelp-fbme6wzk.manus.space/manus-storage/recruit-fv_a582f1b9.png">
+  <link rel="preconnect" href="https://maps.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://maps.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://maps.googleapis.com">
+  <link rel="dns-prefetch" href="https://maps.gstatic.com">
+  <link rel="preload" as="image" href="assets/recruit-fv.png" fetchpriority="high">
+  <style>
+    :root {
+      --base: #0a1628;
+      --card: #0d1f38;
+      --deep: #071020;
+      --text: #f5f5f0;
+      --muted: #8a9bb5;
+      --line: rgba(255, 255, 255, .08);
+      --green: #1db954;
+      --green-dark: #17a84a;
+      --max: 720px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: #101827;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      font-family: Inter, "Helvetica Neue", "Noto Sans JP", "Yu Gothic", system-ui, sans-serif;
+      background: #101827;
+      letter-spacing: 0;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px) 0 0 / 48px 48px,
+        linear-gradient(rgba(255,255,255,.018) 1px, transparent 1px) 0 0 / 48px 48px;
+      opacity: .25;
+    }
+
+    .page {
+      width: min(100%, 430px);
+      margin: 0 auto;
+      padding-top: 56px;
+      background: var(--base);
+      overflow: hidden;
+      box-shadow: 0 0 0 1px rgba(255,255,255,.08), 0 24px 80px rgba(0,0,0,.35);
+    }
+
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      width: min(100%, 430px);
+      transform: translateX(-50%);
+      z-index: 20;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 18px;
+      background: rgba(10, 22, 40, .94);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(12px);
+    }
+
+    .site-header .logo {
+      order: 1;
+    }
+
+    .site-header .menu {
+      order: 2;
+    }
+
+    .menu {
+      width: 36px;
+      height: 36px;
+      display: grid;
+      place-content: center;
+      gap: 5px;
+      padding: 0;
+      border: 0;
+      border-radius: 50%;
+      background: transparent;
+      cursor: pointer;
+    }
+
+    .menu span {
+      width: 24px;
+      display: block;
+      height: 2px;
+      border-radius: 2px;
+      background: var(--text);
+      transition: transform .22s ease, opacity .22s ease;
+    }
+
+    .menu[aria-expanded="true"] span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+
+    .menu[aria-expanded="true"] span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu[aria-expanded="true"] span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .logo {
+      font-weight: 800;
+      font-size: 18px;
+      letter-spacing: .01em;
+    }
+
+    .nav-panel {
+      position: fixed;
+      top: 56px;
+      left: 50%;
+      z-index: 19;
+      width: min(100%, 430px);
+      max-height: calc(100svh - 56px);
+      padding: 18px 16px 22px;
+      overflow-y: auto;
+      background:
+        linear-gradient(180deg, rgba(29,185,84,.08), rgba(29,185,84,0) 34%),
+        rgba(7,16,32,.98);
+      border-bottom: 1px solid rgba(255,255,255,.1);
+      box-shadow: 0 26px 56px rgba(0,0,0,.42);
+      transform: translate(-50%, -14px);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .22s ease, transform .22s ease;
+    }
+
+    .nav-panel.is-open {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translate(-50%, 0);
+    }
+
+    .nav-panel a {
+      display: grid;
+      grid-template-columns: 38px 1fr;
+      gap: 12px;
+      align-items: center;
+      padding: 15px 4px;
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+
+    .nav-panel a span {
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 950;
+      letter-spacing: .08em;
+    }
+
+    .nav-panel a strong {
+      color: var(--text);
+      font-size: 15px;
+      font-weight: 850;
+    }
+
+    .section {
+      position: relative;
+      padding: 76px 16px;
+      background: var(--base);
+    }
+
+    [id] {
+      scroll-margin-top: 72px;
+    }
+
+    .section + .section {
+      border-top: 1px solid var(--line);
+    }
+
+    .section.light {
+      background:
+        linear-gradient(180deg, rgba(29,185,84,.035), transparent 260px),
+        #f5f5f0;
+      color: #071020;
+      border-top-color: rgba(10,22,40,.08);
+    }
+
+    .section.light h2,
+    .section.light h3,
+    .section.light p,
+    .section.light li,
+    .section.light strong {
+      color: #071020;
+    }
+
+    .section.light .lead,
+    .section.light .signature,
+    .section.light .career,
+    .section.light .row dt,
+    .section.light .flow-body p,
+    .section.light .access-row dd {
+      color: #526173;
+    }
+
+    .section.light .card,
+    .section.light .info,
+    .section.light .access-list {
+      background: #ffffff;
+      border-color: rgba(10,22,40,.1);
+      box-shadow: 0 18px 44px rgba(10,22,40,.08);
+    }
+
+    .section.light .quote {
+      color: #071020;
+      background: rgba(29,185,84,.08);
+      border-left-color: var(--green);
+    }
+
+    .section.light .row,
+    .section.light .access-row,
+    .section.light .qa {
+      border-color: rgba(10,22,40,.1);
+    }
+
+    .section.light .btn.secondary {
+      color: #071020;
+      border-color: rgba(10,22,40,.28);
+    }
+
+    .section.light .persona-icon {
+      background:
+        radial-gradient(circle at 30% 20%, rgba(29,185,84,.24), transparent 48%),
+        rgba(29,185,84,.1);
+      border-color: rgba(29,185,84,.4);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.8), 0 12px 26px rgba(10,22,40,.08);
+    }
+
+    .inner {
+      width: min(100%, var(--max));
+      margin: 0 auto;
+    }
+
+    .hero {
+      isolation: isolate;
+      min-height: calc(100svh - 56px);
+      display: flex;
+      align-items: stretch;
+      padding-top: 0;
+      padding-bottom: 34px;
+      overflow: hidden;
+      background: var(--deep);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto;
+      height: min(58svh, 560px);
+      z-index: -2;
+      background: url("assets/recruit-fv.png") center center / cover no-repeat;
+      filter: brightness(.9) contrast(1.12) saturate(1.05);
+      transform: none;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background:
+        linear-gradient(to bottom, rgba(7,16,32,.02) 0%, rgba(7,16,32,.08) 34%, rgba(7,16,32,.78) 57%, rgba(7,16,32,1) 72%),
+        linear-gradient(to right, rgba(7,16,32,.12) 0%, rgba(7,16,32,0) 48%, rgba(7,16,32,.14) 100%),
+        radial-gradient(circle at 78% 24%, rgba(245,245,240,.16), transparent 28%),
+        radial-gradient(circle at 18% 72%, rgba(29,185,84,.16), transparent 32%);
+    }
+
+    .hero .inner {
+      position: relative;
+      z-index: 1;
+      min-height: calc(100svh - 154px);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding-top: min(52svh, 500px);
+    }
+
+    .eyebrow {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    .mega {
+      display: none;
+      max-width: 7.6ch;
+      margin: 0;
+      font-size: clamp(58px, 16.6vw, 82px);
+      line-height: .84;
+      font-weight: 950;
+      letter-spacing: .02em;
+      text-shadow: 0 12px 38px rgba(0,0,0,.38);
+    }
+
+    .hero-copy {
+      max-width: 96%;
+      margin-top: 0;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,.2);
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      margin-bottom: 18px;
+      padding: 0 12px;
+      border: 1px solid rgba(29,185,84,.5);
+      border-radius: 999px;
+      color: var(--green);
+      background: rgba(10,22,40,.5);
+      box-shadow: 0 0 0 4px rgba(29,185,84,.08);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .recruit-urgency {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 24px;
+      padding: 16px 20px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, rgba(212,175,55,.12) 0%, rgba(10,16,32,.85) 50%, rgba(212,175,55,.08) 100%);
+      border: 1px solid rgba(212,175,55,.5);
+      box-shadow: 0 0 24px rgba(212,175,55,.2), 0 0 60px rgba(212,175,55,.08), inset 0 1px 0 rgba(255,255,255,.08);
+      backdrop-filter: blur(10px);
+      animation: urgency-pulse 3s ease-in-out infinite;
+    }
+
+    @keyframes urgency-pulse {
+      0%, 100% { box-shadow: 0 0 24px rgba(212,175,55,.2), 0 0 60px rgba(212,175,55,.08), inset 0 1px 0 rgba(255,255,255,.08); }
+      50% { box-shadow: 0 0 36px rgba(212,175,55,.4), 0 0 80px rgba(212,175,55,.15), inset 0 1px 0 rgba(255,255,255,.1); }
+    }
+
+    .recruit-urgency .urgency-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, rgba(212,175,55,.25) 0%, rgba(184,134,11,.15) 100%);
+      border: 1px solid rgba(212,175,55,.5);
+      box-shadow: 0 0 12px rgba(212,175,55,.3);
+      flex-shrink: 0;
+    }
+
+    .recruit-urgency .urgency-icon svg {
+      width: 22px;
+      height: 22px;
+      fill: none;
+      stroke: #d4af37;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .recruit-urgency .urgency-text {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .recruit-urgency .urgency-deadline {
+      font-size: clamp(18px, 5vw, 22px);
+      font-weight: 900;
+      color: rgba(245,245,240,.95);
+      letter-spacing: .02em;
+      line-height: 1.2;
+    }
+
+    .recruit-urgency .urgency-count {
+      font-size: clamp(24px, 7vw, 30px);
+      font-weight: 950;
+      background: linear-gradient(135deg, #f5d060 0%, #d4af37 40%, #ffd700 70%, #b8860b 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: .02em;
+      line-height: 1.1;
+      filter: drop-shadow(0 0 8px rgba(212,175,55,.4));
+    }
+
+    .hero-title {
+      position: relative;
+      max-width: 100%;
+      margin: 0 0 24px;
+      padding: 0 0 22px;
+      text-shadow: 0 16px 40px rgba(0,0,0,.62);
+    }
+
+    .hero-title::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: min(168px, 46vw);
+      height: 1px;
+      background: linear-gradient(90deg, var(--green), rgba(245,245,240,.48), rgba(29,185,84,0));
+      box-shadow: 0 0 24px rgba(29,185,84,.55);
+    }
+
+    .hero-title .title-line,
+    .hero-title .title-sub {
+      display: block;
+    }
+
+    .hero-title .title-line {
+      color: var(--text);
+      font-size: clamp(28px, 8vw, 36px);
+      font-weight: 950;
+      line-height: 1.18;
+      letter-spacing: .01em;
+      white-space: nowrap;
+    }
+
+    .hero-title .title-line.accent {
+      color: var(--text);
+    }
+
+    .hero-title .title-sub {
+      margin-top: 4px;
+      color: var(--text);
+      font-size: clamp(28px, 8vw, 36px);
+      font-weight: 950;
+      line-height: 1.18;
+      letter-spacing: .01em;
+      white-space: nowrap;
+    }
+
+    .hero .lead {
+      max-width: 29em;
+    }
+
+    .hero .quote {
+      margin: 22px 0;
+      background: rgba(7,16,32,.52);
+      border-left-color: var(--green);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 18px 38px rgba(0,0,0,.22);
+    }
+
+    h1, h2, h3, p {
+      margin-top: 0;
+    }
+
+    h1 {
+      margin-bottom: 18px;
+      font-size: 30px;
+      line-height: 1.42;
+      font-weight: 850;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 27px;
+      line-height: 1.42;
+      font-weight: 850;
+    }
+
+    h3 {
+      margin-bottom: 12px;
+      font-size: 20px;
+      line-height: 1.5;
+      font-weight: 850;
+    }
+
+    p, li {
+      color: var(--text);
+      font-size: 15px;
+      line-height: 1.9;
+    }
+
+    .lead {
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.95;
+    }
+
+    .label {
+      margin-bottom: 12px;
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .small-label {
+      margin-top: 28px;
+      letter-spacing: .04em;
+      text-transform: none;
+    }
+
+    .quote {
+      margin: 28px 0;
+      padding: 20px 18px;
+      color: var(--text);
+      font-style: italic;
+      font-weight: 750;
+      line-height: 1.75;
+      background: rgba(29, 185, 84, .06);
+      border-left: 3px solid var(--green);
+      border-radius: 0 14px 14px 0;
+    }
+
+    .quote.nowrap {
+      font-size: clamp(11px, 3.05vw, 13px);
+      line-height: 1.55;
+      white-space: nowrap;
+      letter-spacing: 0;
+    }
+
+    .actions {
+      display: grid;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      padding: 0 20px;
+      border-radius: 999px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 850;
+    }
+
+    .btn.primary {
+      background: var(--green);
+    }
+
+    .btn.secondary {
+      background: transparent;
+      border: 1.5px solid rgba(255,255,255,.3);
+      color: var(--text);
+    }
+
+    .founder {
+      display: grid;
+      justify-items: center;
+      gap: 14px;
+      margin: 16px 0 34px;
+    }
+
+    .avatar {
+      width: 124px;
+      height: 124px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid rgba(29,185,84,.45);
+      box-shadow: 0 0 0 8px rgba(29,185,84,.06);
+    }
+
+    .signature {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .cards, .stack {
+      display: grid;
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .card {
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--card);
+    }
+
+    .image-card {
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .card-media {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      background: #071020;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .card-media::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(to bottom, rgba(7,16,32,0) 45%, rgba(7,16,32,.62) 100%),
+        linear-gradient(135deg, rgba(29,185,84,.16), transparent 42%);
+      pointer-events: none;
+    }
+
+    .card-media img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      filter: saturate(1.04) contrast(1.04);
+    }
+
+    .card-body {
+      padding: 22px;
+    }
+
+    .num {
+      display: block;
+      margin-bottom: 10px;
+      color: var(--green);
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: .08em;
+    }
+
+    .card p:last-child,
+    .section p:last-child {
+      margin-bottom: 0;
+    }
+
+    .persona-head {
+      display: grid;
+      grid-template-columns: 54px 1fr;
+      gap: 14px;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+
+    .persona-head h3 {
+      margin-bottom: 0;
+    }
+
+    .persona-icon {
+      width: 54px;
+      height: 54px;
+      display: grid;
+      place-items: center;
+      border-radius: 16px;
+      color: var(--green);
+      background:
+        radial-gradient(circle at 30% 20%, rgba(29,185,84,.22), transparent 48%),
+        rgba(29,185,84,.08);
+      border: 1px solid rgba(29,185,84,.36);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.08), 0 14px 30px rgba(0,0,0,.18);
+    }
+
+    .persona-icon svg {
+      width: 28px;
+      height: 28px;
+      stroke: currentColor;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+
+    .bullets {
+      padding: 0;
+      margin: 20px 0 0;
+      list-style: none;
+    }
+
+    .bullets li {
+      position: relative;
+      padding-left: 22px;
+      margin-bottom: 16px;
+    }
+
+    .bullets li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: .82em;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--green);
+    }
+
+    .values-showcase {
+      margin-top: 34px;
+      overflow: hidden;
+      border: 1px solid rgba(10,22,40,.1);
+      border-radius: 18px;
+      background: #071020;
+      box-shadow: 0 22px 54px rgba(10,22,40,.16);
+    }
+
+    .values-visual {
+      position: relative;
+      min-height: 240px;
+      display: flex;
+      align-items: flex-end;
+      padding: 22px;
+      background: url("assets/shared-values-trx.png") center center / cover no-repeat;
+      color: var(--text);
+    }
+
+    .values-visual::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(to bottom, rgba(7,16,32,.02) 0%, rgba(7,16,32,.1) 36%, rgba(7,16,32,.88) 100%),
+        linear-gradient(105deg, rgba(7,16,32,.9) 0%, rgba(7,16,32,.34) 50%, rgba(7,16,32,.04) 100%);
+    }
+
+    .values-visual > div {
+      position: relative;
+      z-index: 1;
+    }
+
+    .values-visual .label {
+      margin-bottom: 12px;
+    }
+
+    .values-visual h3 {
+      max-width: 9em;
+      margin-bottom: 0;
+      color: var(--text);
+      font-size: 30px;
+      line-height: 1.22;
+      letter-spacing: .01em;
+    }
+
+    .values-grid {
+      display: grid;
+      gap: 1px;
+      background: rgba(255,255,255,.08);
+    }
+
+    .value-item {
+      display: grid;
+      grid-template-columns: 44px 1fr;
+      gap: 14px;
+      padding: 18px;
+      background: #0d1f38;
+    }
+
+    .value-item span {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: #071020;
+      background: var(--green);
+      font-size: 12px;
+      font-weight: 950;
+    }
+
+    .value-item strong {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--text);
+      font-size: 15px;
+      line-height: 1.55;
+    }
+
+    .value-item p {
+      margin: 0;
+      color: rgba(245,245,240,.76);
+      font-size: 13px;
+      line-height: 1.75;
+    }
+
+    .values-closing {
+      margin: 0;
+      padding: 22px;
+      color: var(--text);
+      font-weight: 800;
+      line-height: 1.85;
+      background:
+        linear-gradient(135deg, rgba(29,185,84,.16), rgba(29,185,84,0)),
+        #071020;
+      border-top: 1px solid rgba(255,255,255,.08);
+    }
+
+    .section.light .values-visual h3,
+    .section.light .value-item strong,
+    .section.light .values-closing {
+      color: var(--text);
+    }
+
+    .section.light .value-item p {
+      color: rgba(245,245,240,.76);
+    }
+
+    .timeline {
+      position: relative;
+      display: grid;
+      gap: 18px;
+      margin-top: 30px;
+      padding-left: 18px;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 18px;
+      top: 16px;
+      bottom: 16px;
+      width: 2px;
+      background: var(--green);
+      opacity: .9;
+    }
+
+    .career-section {
+      isolation: isolate;
+      overflow: hidden;
+      background: #071020;
+    }
+
+    .career-section::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background:
+        radial-gradient(circle at 12% 18%, rgba(29,185,84,.18), transparent 34%),
+        #071020;
+    }
+
+    .career-section::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background:
+        linear-gradient(to bottom, rgba(7,16,32,.2) 0%, rgba(7,16,32,.72) 100%);
+    }
+
+    .career-section h2 {
+      max-width: 100%;
+      font-size: 28px;
+      line-height: 1.28;
+      letter-spacing: -0.01em;
+      white-space: nowrap;
+      text-shadow: 0 14px 36px rgba(0,0,0,.5);
+    }
+    @media (max-width: 360px) {
+      .career-section h2 {
+        font-size: 24px;
+      }
+    }
+
+    .career-section .lead {
+      max-width: 27em;
+      color: rgba(245,245,240,.76);
+    }
+
+    .career-visual {
+      position: relative;
+      margin: 28px 0 30px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 18px;
+      background: #071020;
+      box-shadow: 0 22px 56px rgba(0,0,0,.34);
+    }
+
+    .career-visual img {
+      width: 100%;
+      height: auto;
+      min-height: 210px;
+      display: block;
+      object-fit: cover;
+      filter: saturate(1.06) contrast(1.03);
+    }
+
+    .career-visual::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(to bottom, rgba(7,16,32,0) 46%, rgba(7,16,32,.44) 100%),
+        linear-gradient(135deg, rgba(29,185,84,.16), transparent 45%);
+      pointer-events: none;
+    }
+
+    .career-section .timeline {
+      margin-top: 0;
+    }
+
+    .career-section .phase {
+      background: rgba(13,31,56,.78);
+      border-color: rgba(255,255,255,.12);
+      box-shadow: 0 18px 42px rgba(0,0,0,.22);
+      backdrop-filter: blur(12px);
+    }
+
+    .phase {
+      position: relative;
+      padding-left: 24px;
+    }
+
+    .phase::before {
+      content: attr(data-step);
+      position: absolute;
+      left: -18px;
+      top: 20px;
+      width: 36px;
+      height: 36px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--green);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .interview .person {
+      display: grid;
+      grid-template-columns: 76px 1fr;
+      gap: 14px;
+      align-items: center;
+      margin-bottom: 18px;
+    }
+
+    .interview .avatar {
+      width: 76px;
+      height: 76px;
+    }
+
+    .interview .avatar.yoshioka {
+      object-position: 54% 34%;
+    }
+
+    .career {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    .catch {
+      color: var(--text);
+      font-size: 16px;
+      font-weight: 850;
+      font-style: italic;
+    }
+
+    .qa {
+      margin-top: 18px;
+      padding: 18px 0 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .qa strong {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 12px;
+      color: var(--green);
+      font-size: 15px;
+      line-height: 1.65;
+      font-weight: 900;
+    }
+
+    .qa strong::before {
+      content: "Q";
+      flex: 0 0 auto;
+      width: 24px;
+      height: 24px;
+      display: grid;
+      place-items: center;
+      margin-top: 1px;
+      border-radius: 50%;
+      color: #fff;
+      background: var(--green);
+      font-size: 12px;
+      line-height: 1;
+    }
+
+    .qa p {
+      margin-left: 32px;
+      color: var(--text);
+    }
+
+    .salary-headline {
+      position: relative;
+      margin: 28px 0 18px;
+      padding: 26px 22px 28px;
+      border-radius: 20px;
+      overflow: hidden;
+      background:
+        radial-gradient(120% 140% at 0% 0%, rgba(29,185,84,.22), rgba(29,185,84,0) 55%),
+        linear-gradient(135deg, #0f2740 0%, #0a1628 60%, #06101e 100%);
+      border: 1px solid rgba(29,185,84,.35);
+      box-shadow:
+        0 22px 50px rgba(0,0,0,.45),
+        inset 0 0 0 1px rgba(255,255,255,.04);
+      isolation: isolate;
+    }
+
+    .salary-headline::before {
+      content: "";
+      position: absolute;
+      inset: -1px;
+      border-radius: inherit;
+      padding: 1px;
+      background: linear-gradient(135deg, rgba(29,185,84,.55), rgba(29,185,84,0) 40%, rgba(29,185,84,.35) 100%);
+      -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+              mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+      -webkit-mask-composite: xor;
+              mask-composite: exclude;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .salary-headline::after {
+      content: "";
+      position: absolute;
+      right: -40px;
+      top: -40px;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: radial-gradient(closest-side, rgba(29,185,84,.28), rgba(29,185,84,0) 70%);
+      filter: blur(2px);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .salary-headline > * { position: relative; z-index: 1; }
+
+    .salary-headline .salary-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0 0 10px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(29,185,84,.14);
+      border: 1px solid rgba(29,185,84,.45);
+      color: #b6f0c9;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    .salary-headline .salary-eyebrow::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 0 4px rgba(29,185,84,.18);
+    }
+
+    .salary-headline .salary-value {
+      display: flex;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 6px 10px;
+      margin: 4px 0 0;
+      color: var(--text);
+      font-weight: 900;
+      letter-spacing: -.01em;
+      line-height: 1.05;
+    }
+
+    .salary-headline .salary-prefix {
+      font-size: 18px;
+      font-weight: 800;
+      color: #cfe7d7;
+    }
+
+    .salary-headline .salary-amount {
+      font-size: clamp(44px, 13vw, 60px);
+      background: linear-gradient(180deg, #ffffff 0%, #d1f3dc 60%, #1db954 120%);
+      -webkit-background-clip: text;
+              background-clip: text;
+      color: transparent;
+      text-shadow: 0 1px 0 rgba(0,0,0,.2);
+    }
+
+    .salary-headline .salary-unit {
+      font-size: clamp(20px, 5.6vw, 26px);
+      font-weight: 800;
+      color: #f5f5f0;
+    }
+
+    .salary-headline .salary-note {
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    .info {
+      margin-top: 24px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--card);
+    }
+
+    .row {
+      display: grid;
+      gap: 6px;
+      padding: 16px 18px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .row:last-child {
+      border-bottom: 0;
+    }
+
+    .row dt {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .row dd {
+      margin: 0;
+      color: var(--text);
+      font-size: 14px;
+      line-height: 1.75;
+    }
+
+    .final {
+      text-align: center;
+      background: var(--deep);
+    }
+
+    .final .card {
+      text-align: left;
+      border-color: rgba(29,185,84,.45);
+    }
+
+    .flow {
+      position: relative;
+      display: grid;
+      gap: 0;
+      margin-top: 30px;
+      text-align: left;
+      padding: 6px 0 6px 4px;
+    }
+
+    .flow::before {
+      content: "";
+      position: absolute;
+      left: 18px;
+      top: 28px;
+      bottom: 28px;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--green), rgba(29,185,84,.18));
+    }
+
+    .flow-step {
+      position: relative;
+      display: grid;
+      grid-template-columns: 38px 1fr;
+      gap: 14px;
+      padding: 0 0 20px;
+    }
+
+    .flow-step:last-child {
+      padding-bottom: 0;
+    }
+
+    .flow-body {
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(13,31,56,.78);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.04);
+    }
+
+    .flow-body p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.75;
+    }
+
+    .flow-body strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--text);
+      font-size: 15px;
+      line-height: 1.55;
+    }
+
+    .dot {
+      position: relative;
+      z-index: 1;
+      width: 30px;
+      height: 30px;
+      margin-top: 16px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--green);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 900;
+      box-shadow: 0 0 0 6px rgba(29,185,84,.12), 0 10px 22px rgba(0,0,0,.22);
+    }
+
+    .access {
+      margin-top: 52px;
+      text-align: left;
+    }
+
+    .services {
+      margin-top: 56px;
+      text-align: left;
+    }
+
+    .service-grid {
+      display: grid;
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .service-card {
+      position: relative;
+      display: block;
+      min-height: 0;
+      padding: 0;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 18px;
+      color: var(--text);
+      text-decoration: none;
+      background:
+        linear-gradient(135deg, rgba(29,185,84,.16), transparent 42%),
+        linear-gradient(180deg, rgba(255,255,255,.06), transparent),
+        #0d1f38;
+      box-shadow: 0 18px 44px rgba(0,0,0,.2);
+    }
+
+    .service-media {
+      position: relative;
+      aspect-ratio: 16 / 10;
+      overflow: hidden;
+      background: #071020;
+    }
+
+    .service-media img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(.78) contrast(1.05) saturate(.95);
+      transform: scale(1.01);
+    }
+
+    .service-media::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, transparent 30%, rgba(7,16,32,.86));
+    }
+
+    .service-content {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 48px;
+      gap: 16px;
+      align-items: end;
+      padding: 18px 18px 20px;
+    }
+
+    .social-card {
+      margin-top: 14px;
+      background:
+        linear-gradient(135deg, rgba(29,185,84,.16), rgba(13,31,56,.95) 44%),
+        #0d1f38;
+    }
+
+    .social-card .service-content {
+      align-items: center;
+      min-height: 118px;
+    }
+
+    .service-card::before {
+      content: "";
+      position: absolute;
+      right: -48px;
+      top: -52px;
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 1px solid rgba(29,185,84,.26);
+      background: rgba(29,185,84,.06);
+    }
+
+    .service-card strong {
+      position: relative;
+      display: block;
+      margin-bottom: 8px;
+      color: var(--text);
+      font-size: 21px;
+      line-height: 1.25;
+      font-weight: 950;
+      letter-spacing: .01em;
+    }
+
+    .service-desc {
+      position: relative;
+      display: block;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
+    .service-arrow {
+      position: relative;
+      z-index: 1;
+      align-self: start;
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: #fff;
+      background: var(--green);
+      font-size: 22px;
+      font-weight: 900;
+      box-shadow: 0 10px 24px rgba(29,185,84,.28);
+    }
+
+    .access h3 {
+      margin-bottom: 18px;
+      font-size: 26px;
+      line-height: 1.35;
+    }
+
+    .map-card {
+      position: relative;
+      height: 280px;
+      margin-bottom: 18px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--card);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.06), 0 18px 44px rgba(0,0,0,.2);
+    }
+
+    .map-card iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      filter: saturate(.92) contrast(1.02);
+    }
+
+    .map-label {
+      position: absolute;
+      left: 18px;
+      bottom: 18px;
+      z-index: 2;
+      max-width: calc(100% - 36px);
+      padding: 14px 16px;
+      border-radius: 14px;
+      background: rgba(7,16,32,.78);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,.1);
+      pointer-events: none;
+    }
+
+    .map-label strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--text);
+      font-size: 15px;
+    }
+
+    .map-label span {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    .map-link {
+      position: absolute;
+      right: 14px;
+      top: 14px;
+      z-index: 2;
+      min-height: 40px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0 14px;
+      border-radius: 999px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 850;
+      background: var(--green);
+      box-shadow: 0 10px 24px rgba(29,185,84,.28);
+    }
+
+    .access-list {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--card);
+    }
+
+    .access-row {
+      padding: 20px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .access-row:last-child {
+      border-bottom: 0;
+    }
+
+    .access-row dt {
+      margin-bottom: 8px;
+      color: var(--green);
+      font-size: 14px;
+      font-weight: 900;
+    }
+
+    .access-row dd {
+      margin: 0;
+      color: var(--text);
+      font-size: 15px;
+      line-height: 1.85;
+    }
+
+    footer {
+      padding: 54px 16px 86px;
+      text-align: center;
+      background: var(--deep);
+      border-top: 1px solid var(--line);
+    }
+
+    footer .brand {
+      margin-bottom: 12px;
+      font-size: 22px;
+      font-weight: 900;
+    }
+
+    footer p,
+    footer a {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.9;
+      text-decoration: none;
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 8px;
+      margin-top: 26px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+    }
+
+    .copyright {
+      margin-top: 20px;
+      color: #4a5a70;
+      font-size: 11px;
+    }
+
+    .floating-cta {
+      position: fixed;
+      left: 50%;
+      bottom: 16px;
+      z-index: 30;
+      width: min(366px, calc(100vw - 32px));
+      min-height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      border-radius: 999px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 900;
+      background: linear-gradient(135deg, var(--green), var(--green-dark));
+      box-shadow: 0 4px 20px rgba(29,185,84,.4);
+      opacity: 0;
+      pointer-events: none;
+      transform: translate(-50%, 18px);
+      transition: opacity .24s ease, transform .24s ease;
+    }
+
+    .floating-cta.is-visible {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translate(-50%, 0);
+    }
+
+    .line-icon {
+      font-size: 11px;
+      letter-spacing: .08em;
+    }
+
+    @media (min-width: 431px) {
+      body { padding: 0; }
+    }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJ8DFDN6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <div class="page">
+    <header class="site-header">
+      <div class="logo">Dr.core</div>
+      <button class="menu" type="button" aria-label="メニューを開く" aria-controls="global-menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </header>
+    <nav class="nav-panel" id="global-menu" aria-label="ページ内メニュー">
+      <a href="#top"><span>01</span><strong>トップ</strong></a>
+      <a href="#founder"><span>02</span><strong>代表メッセージ</strong></a>
+      <a href="#offers"><span>03</span><strong>Dr.coreで得られるもの</strong></a>
+      <a href="#who"><span>04</span><strong>求める人物像</strong></a>
+      <a href="#career"><span>05</span><strong>キャリアロードマップ</strong></a>
+      <a href="#team"><span>06</span><strong>チームの声</strong></a>
+      <a href="#requirements"><span>07</span><strong>待遇・募集要項</strong></a>
+      <a href="#entry"><span>08</span><strong>エントリー</strong></a>
+      <a href="#services"><span>09</span><strong>展開中のサービス</strong></a>
+      <a href="#access"><span>10</span><strong>アクセス</strong></a>
+    </nav>
+
+    <main>
+      <section class="section hero" id="top">
+        <div class="inner">
+          <p class="mega">We change<br>lives.</p>
+          <div class="hero-copy">
+            <div class="recruit-urgency">
+              <div class="urgency-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div>
+              <div class="urgency-text">
+                <span class="urgency-deadline">6月30日 23:59まで</span>
+                <span class="urgency-count">3名採用</span>
+              </div>
+            </div>
+            <h1 class="hero-title">
+              <span class="title-line">トレーナーに</span>
+              <span class="title-line accent">なりたかった理由を</span>
+              <span class="title-sub">まだ覚えているか。</span>
+            </h1>
+            <p class="lead">機能解剖学と運動学・バイオメカニクスを軸に、身体の根本から変える。Dr.coreのブランドを一緒に創り上げていける人を探しています。</p>
+            <div class="actions">
+              <a class="btn primary" href="https://utage-system.com/line/open/EHWMMCpx5nHg" target="_blank" rel="noopener noreferrer">まずカジュアルに話を聞く（LINE）</a>
+              <a class="btn secondary" href="#requirements">募集要項を見る</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section light" id="founder">
+        <div class="inner">
+          <p class="label">FROM THE FOUNDER</p>
+          <h2>目の前の人の人生を、本当に変えられているか。</h2>
+          <div class="founder">
+            <img class="avatar" src="assets/kijima-card-new.png" alt="木嶋 翔" decoding="async" width="160" height="160">
+            <p class="signature">Dr.core 代表　木嶋 翔 Kakeru Kijima</p>
+          </div>
+          <p><strong>10代の頃の僕は、何もかも諦めていました。</strong></p>
+          <p>大きな挫折があって、将来への希望も、自分への自信も、ほとんど失っていた。そんなときに出会ったのが、トレーニングでした。身体が変わると、気持ちが変わった。気持ちが変わると、毎日が変わった。<strong>トレーニングが、文字通り僕の人生を変えたんです。</strong></p>
+          <p>だからトレーナーになりました。あのときの自分のように、身体や気持ちに悩んでいる人の力になりたかった。目の前の人の人生を、本当に変えたかった。</p>
+          <p>でも、現場に立つようになって、見えてきたことがある。<strong>世の中には、トレーニングで傷ついた人がたくさんいる、</strong>ということを。</p>
+          <div class="quote nowrap">「前のジムで、痛いのに無理やりやらされた。」</div>
+          <div class="quote nowrap">「運動が嫌いになって、もう何年もできていない。」</div>
+          <p>その言葉を聞くたびに、胸が痛かった。本来、トレーニングは人を救うもののはずだ。なのに、表面だけの指導が、お客様の身体と気持ちを傷つけている。これは、絶対に変えなければならないと思った。</p>
+          <p>だからDr.coreは、機能解剖学と運動学・バイオメカニクスを軸にしています。見た目だけを変えるのではなく、身体の「コア」から根本的に整える。痛みの原因を取り除き、その人が本来持っている力を引き出す。それが、僕たちの考える「本質的な健康」です。</p>
+          <p>お客様に本物の価値を届けること。その一点に、すべてを注いできました。<strong>グループ30店舗で積み上げてきたノウハウも、専門知識も、すべてはそのためにある。</strong></p>
+          <div class="quote nowrap">「本物の健康を、もっと多くの人の手に届けたい。」</div>
+          <p>表面ではなく、根本から。症状ではなく、その人の人生ごと変える。その信念を、一緒に体現できる人と、Dr.coreを創りたい。</p>
+          <p>身体の痛みを抱えたまま、それでも動きたいと思っている人がいる。運動が怖くなってしまった人が、もう一度身体を信じられる日を取り戻せるように。健康でいることが、当たり前じゃない人たちに、本物のケアを届けたい。</p>
+          <p><strong>そのために、まだやれることが山ほどある。<br>一緒に、やりませんか。</strong></p>
+        </div>
+      </section>
+
+      <section class="section" id="offers">
+        <div class="inner">
+          <p class="label">WHAT Dr.core OFFERS</p>
+          <h2>お客様に本質を届けるための、環境がここにある。</h2>
+          <p class="lead">「本当に役に立てているか」と自問し続けてきた人ほど、Dr.coreの環境が響くはずです。</p>
+          <div class="cards">
+            <article class="card image-card">
+              <div class="card-media">
+                <img src="assets/offer-01-functional.png" alt="機能解剖学と運動学・バイオメカニクスに基づくトレーニング" decoding="async" width="800" height="500">
+              </div>
+              <div class="card-body">
+                <span class="num">01</span>
+                <h3>機能解剖学×運動学・バイオメカニクス。根拠のある指導が、ここにある。</h3>
+                <p>Dr.coreは機能解剖学と運動学・バイオメカニクスを軸に、身体の根本から変えるアプローチを取っています。表面的/部分的なトレーニングではなく、身体の「コア」から動きを整え、その人が本来持っている力を引き出す。ダイエット・姿勢改善・パフォーマンスアップ・痛みの改善まで、幅広いお客様のニーズに応えられる知識体系を、「なぜそうするのか」という根拠から体系的に習得できます。</p>
+              </div>
+            </article>
+            <article class="card image-card">
+              <div class="card-media">
+                <img src="assets/offer-02-group.jpg" alt="全国30店舗以上を展開するグループ" decoding="async" width="800" height="500">
+              </div>
+              <div class="card-body">
+                <span class="num">02</span>
+                <h3>全国30店舗以上のグループ基盤</h3>
+                <p>整体院・ピラティススタジオ・パーソナルジムなど、複数業態で全国30店舗以上を展開するグループの一員として、Dr.coreには長年にわたり積み上げてきた運営ノウハウと組織基盤があります。</p>
+                <p>集客の仕組み、スタッフのサポート体制、店舗運営のフロー——こうした「働く環境としての土台」がしっかり整っているのは、当たり前のようで、実はトレーナーとして本質的な仕事をする上でとても重要なことです。</p>
+                <p>グループ全体で培ってきた知見は、研修・マニュアル・ケーススタディとして蓄積されているため、一人で戦う必要はありません。</p>
+              </div>
+            </article>
+            <article class="card image-card">
+              <div class="card-media">
+                <img src="assets/offer-03-build.png" alt="Dr.coreの店舗空間" decoding="async" width="800" height="500">
+              </div>
+              <div class="card-body">
+                <span class="num">03</span>
+                <h3>もっとよくできるを、形にできる環境</h3>
+                <p>Dr.coreは今、本格的な店舗展開とブランド確立に向けて動き出したばかりのフェーズにあります。つまり今ここにいるということは、「できあがった組織に入る」のではなく、ブランドそのものを一緒に作り上げていく側にいるということです。</p>
+                <p>「このサービスをもっとこうしたい」「こういう取り組みを試してみたい」——そのアイデアが、ここでは実際に形になります。承認待ちで止まるのではなく、自分が動けば現場が変わる。自分の提案がお客様の体験を変え、それがブランドの価値になっていく。そのサイクルを、最前線で体感できる環境です。</p>
+                <p>大きな組織では絶対に得られない、創業期にしかない手触りと熱量が、ここにはあります。</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section light" id="who">
+        <div class="inner">
+          <p class="label">WHO WE NEED</p>
+          <h2>こんな人が、ぴったり</h2>
+          <p class="lead">バックグラウンドは問いません。トレーナー経験者でも、まったく別の業界から来た人でも。Dr.coreが大切にしているのは、「目の前の人の人生を、本気で変えたいか。」というただひとつの問いに「YES」と言えるかだけです。</p>
+          <div class="cards">
+            <article class="card">
+              <span class="num">01</span>
+              <div class="persona-head">
+                <div class="persona-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M6 7v10"></path>
+                    <path d="M18 7v10"></path>
+                    <path d="M3.5 10v4"></path>
+                    <path d="M20.5 10v4"></path>
+                    <path d="M6 12h12"></path>
+                  </svg>
+                </div>
+                <h3>現役トレーナー・フィットネス業界経験者</h3>
+              </div>
+              <p><strong>「もっと本質的な指導がしたい」と思い続けてきた人へ。</strong></p>
+              <p>大手ジムでセッションをこなしながら、「これで本当にお客様の役に立てているのか」と感じてきたことはありませんか。Dr.coreには、機能解剖学と運動学・バイオメカニクスを軸にした専門知識と、それを実践できる環境があります。あなたが「本来やりたかった指導」を、ここで実現してほしい。</p>
+            </article>
+            <article class="card">
+              <span class="num">02</span>
+              <div class="persona-head">
+                <div class="persona-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M12 4v16"></path>
+                    <path d="M4 12h16"></path>
+                    <path d="M7 5h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"></path>
+                  </svg>
+                </div>
+                <h3>理学療法士・柔道整復師など国家資格保有者</h3>
+              </div>
+              <p><strong>「予防」を何より大切にしたい人へ。</strong></p>
+              <p>現場で身につけた専門知識を、予防やパフォーマンスアップに活かしたいと考えたことはありませんか。Dr.coreでは、医学と運動学の融合という独自のアプローチで、お客様の人生そのものに関わる仕事ができます。あなたの知識は、もっと広い場所で輝けるはずです。</p>
+            </article>
+            <article class="card">
+              <span class="num">03</span>
+              <div class="persona-head">
+                <div class="persona-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M9 7a3 3 0 1 0 6 0a3 3 0 0 0-6 0Z"></path>
+                    <path d="M5 21a7 7 0 0 1 14 0"></path>
+                    <path d="M9 14h6"></path>
+                    <path d="M10 14l2 3l2-3"></path>
+                  </svg>
+                </div>
+                <h3>別業界からの転職者</h3>
+              </div>
+              <p><strong>業界経験より、熱量を持った人へ。</strong></p>
+              <p>トレーナーの経験がなくても構いません。「人の人生を変える仕事がしたい」という強い気持ちがあれば、Dr.coreの環境と研修制度が、あなたを本物のプロに育てます。大切なのは、今何ができるかではなく、何を本気でやりたいかです。</p>
+            </article>
+            <article class="card">
+              <span class="num">04</span>
+              <div class="persona-head">
+                <div class="persona-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M12 20V4"></path>
+                    <path d="M5 11l7-7 7 7"></path>
+                    <path d="M4 20h16"></path>
+                  </svg>
+                </div>
+                <h3>自分自身を成長させたい人</h3>
+              </div>
+              <p><strong>「トレーナーとして、そして一人の人間として、もっと上に行きたい」という人へ。</strong></p>
+              <p>「専門知識を極めたい」「ビジネスのこともわかる人間になりたい」「いつか自分で何かを動かしたい」——そういう欲求を、ひとつの仕事の中で全部叶えようとしたら、どんな環境が必要でしょうか。</p>
+              <p>Dr.coreには、トレーナーとしての専門性を深める機会だけでなく、事業を一緒に創っていく中で自然とビジネスの感覚が身につく環境があります。集客の仕組み、店舗運営、スタッフのマネジメント、サービスの改善提案——現場に立ちながら、これらすべてに関わることができる。「指示を受けてこなす」のではなく、「自分が考えて動かす」という経験が、ここでは日常になります。</p>
+              <p>トレーナーとしての技術が上がるほど、お客様の人生が変わる。店舗を動かす力がつくほど、自分のビジョンが形になる。Dr.coreはまだ成長途中のブランドだからこそ、あなたの成長がそのままブランドの成長になる。その手触りを、最前線で感じられる場所です。</p>
+              <p>成長したい気持ちを、ここでは余すことなく使ってください。</p>
+            </article>
+          </div>
+          <div class="values-showcase">
+            <div class="values-visual">
+              <div>
+                <p class="label">COMMON VALUES</p>
+                <h3>共通して大切にしてほしいこと</h3>
+              </div>
+            </div>
+            <div class="values-grid">
+              <div class="value-item">
+                <span>01</span>
+                <div>
+                  <strong>変化を、自分のことのように喜べる。</strong>
+                  <p>結果が出たとき、数字ではなくその人の表情を見て嬉しくなれる人。</p>
+                </div>
+              </div>
+              <div class="value-item">
+                <span>02</span>
+                <div>
+                  <strong>学び続けることを、苦にしない。</strong>
+                  <p>専門知識は日々深まるもの。向上心を持って知識を追い続けられる人。</p>
+                </div>
+              </div>
+              <div class="value-item">
+                <span>03</span>
+                <div>
+                  <strong>チームで動くことを、楽しめる。</strong>
+                  <p>自分だけでなく、周りの人と一緒に成長していける人。</p>
+                </div>
+              </div>
+              <div class="value-item">
+                <span>04</span>
+                <div>
+                  <strong>「なぜ」を大切にできる。</strong>
+                  <p>表面的なやり方ではなく、根拠と理由を持って動ける人。</p>
+                </div>
+              </div>
+            </div>
+            <p class="values-closing">どんな道を歩んできたとしても、「お客様の人生を本気で変えたい」という想いがあれば、あなたにとっての場所がここにあります。まずは、話を聞かせてください。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section career-section" id="career">
+        <div class="inner">
+          <p class="label">YOUR CAREER PATH</p>
+          <h2>あなたのキャリアに、<br>天井はない。</h2>
+          <p class="lead">現場でお客様と向き合いながら、店長として店舗を動かし、Dr.coreを共に作り上げていく存在へ。</p>
+          <div class="career-visual">
+            <img src="assets/career-step-bg.png" alt="Dr.coreのトレーニング器具" decoding="async" width="800" height="500">
+          </div>
+          <div class="timeline">
+            <article class="phase card" data-step="01">
+              <span class="num">入社〜1ヶ月</span>
+              <h3>専門知識と現場感覚を積み上げる</h3>
+              <p>基礎から実技まで、経験豊富な講師陣による直接研修で学びます。</p>
+            </article>
+            <article class="phase card" data-step="02">
+              <span class="num">1ヶ月〜1年</span>
+              <h3>トレーナーとして独り立ち</h3>
+              <p>セッションを重ねながら、店舗運営の全体像も肌で覚えていきます。</p>
+            </article>
+            <article class="phase card" data-step="03">
+              <span class="num">1年〜</span>
+              <h3>店長として店舗の責任者へ</h3>
+              <p>サービス改善、スタッフ育成、店舗体験の質をリードします。</p>
+            </article>
+            <article class="phase card" data-step="04">
+              <span class="num">その先へ</span>
+              <h3>育成・教育担当へ</h3>
+              <p>次世代のトレーナーを育て、ブランド全体の価値を広げます。</p>
+            </article>
+            <article class="phase card" data-step="05">
+              <span class="num">さらにその先へ</span>
+              <h3>独立・開業という選択肢も</h3>
+              <p>FC独立・開業支援制度を活かし、自分のビジョンを形にする道もあります。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section light" id="team">
+        <div class="inner">
+          <p class="label">FROM THE TEAM</p>
+          <h2>ここを選んだ理由を、自分の言葉で話してもらいました。</h2>
+          <div class="cards">
+            <article class="card interview">
+              <div class="person">
+                <img class="avatar" src="assets/takakura-card.png?v=2" alt="高倉 大輝" decoding="async" width="160" height="160">
+                <div>
+                  <h3>高倉 大輝</h3>
+                  <p class="career">大手パーソナルジム → Dr.core / トレーナー</p>
+                </div>
+              </div>
+              <p class="catch">「自分の経験が、お客様を救える。その実感が、ここにある。」</p>
+              <div class="qa">
+                <strong>Dr.coreに来る前、何に限界を感じていましたか？</strong>
+                <p>トレーナーになった時から、「本当に意味のある指導をしたい」という気持ちが強くありました。でも業界を見渡すと、表面的なメニューをこなすだけで、お客様の身体の根本には向き合えていないジムが多いことに気づきました。悔しいというより、「これを変えたい」という気持ちの方が大きかった。自分が本質的な価値を届けられる場所を、ずっと探していました。</p>
+              </div>
+              <div class="qa">
+                <strong>Dr.coreを選んだ決め手は何でしたか？</strong>
+                <p>自分自身、椎間板ヘルニアや坐骨神経痛で日常生活もままならない時期がありました。ファンクショナルトレーニングで身体の使い方を見直すことで、それが改善されました。この経験をお客様に届けたいと思ったとき、Dr.coreの専門性が自分の想いと重なったんです。</p>
+              </div>
+              <div class="qa">
+                <strong>今、どんな瞬間にやりがいを感じますか？</strong>
+                <p>「ゴルフができるようになった」「フルマラソンに挑戦できた」という言葉をお客様からいただくときです。数字や結果より、その人の人生が広がった瞬間に立ち会えることが、この仕事の本質だと思っています。</p>
+              </div>
+            </article>
+            <article class="card interview">
+              <div class="person">
+                <img class="avatar yoshioka" src="assets/yoshioka-card.png?v=3" alt="吉岡 俊輝" decoding="async" width="160" height="160">
+                <div>
+                  <h3>吉岡 俊輝</h3>
+                  <p class="career">大手パーソナルジム → Dr.core / 店長候補</p>
+                </div>
+              </div>
+              <p class="catch">「現場を動かす側になって、仕事の景色が変わった。」</p>
+              <div class="qa">
+                <strong>大手から転職しようと思ったきっかけは何でしたか？</strong>
+                <p>大手では仕組みが整っている分、自分が動かせる範囲が決まっていました。「こうしたほうがお客様のためになる」と思っても、すぐに形にできないもどかしさがありました。もっと自分の意思で動いて、結果を出したかった。それが転職を考えたいちばんの理由です。</p>
+              </div>
+              <div class="qa">
+                <strong>Dr.coreで店長候補として働いてみて、実際どうですか？</strong>
+                <p>「やってみよう」が通る環境だと実感しています。サービスの改善案を出せば、すぐに試せる。お客様への指導方針も、自分で考えて動かせる。自分がやったことが、そのまま店舗の変化につながる手応えが、毎日あります。</p>
+              </div>
+              <div class="qa">
+                <strong>仕事の中で、一番やりがいを感じる瞬間は？</strong>
+                <p>自分が「こうしたい」と思って動かしたことが、お客様の体験として返ってくる瞬間です。新しいアプローチを試してみたら、お客様の表情が明らかに変わった。そういう瞬間に、「自分がやったことに意味があった」という実感が生まれます。指示を待つのではなく、自分で考えて動ける環境だからこそ、得られるやりがいだと思っています。</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="requirements">
+        <div class="inner">
+          <p class="label">JOIN Dr.core</p>
+          <h2>実務の詳細</h2>
+          <p class="lead">Dr.coreのことを、少し深く知っていただけたでしょうか。ここからは、実際に働く環境についての情報をお伝えします。</p>
+          <div class="cards">
+            <article class="card">
+              <span class="num">PRIMARY</span>
+              <h3>店長候補</h3>
+              <p>現場でのトレーナー業務を軸に、店舗運営・スタッフマネジメント・サービス改善まで担うポジション。Dr.coreブランドの中心を動かす役割です。</p>
+            </article>
+            <article class="card">
+              <span class="num">NEXT STEP</span>
+              <h3>トレーナー育成・教育担当</h3>
+              <p>店長経験を経て、次世代のトレーナーを育てる役割へ。指導プログラムの設計・研修体制の構築など、ブランド全体の質を高めていく立場です。</p>
+            </article>
+          </div>
+          <div class="salary-headline" aria-label="平均月収35万円">
+            <span class="salary-eyebrow">AVERAGE MONTHLY INCOME</span>
+            <p class="salary-value">
+              <span class="salary-prefix">平均月収</span>
+              <span class="salary-amount">35</span>
+              <span class="salary-unit">万円</span>
+            </p>
+          </div>
+          <dl class="info">
+            <div class="row"><dt>雇用形態</dt><dd>業務委託</dd></div>
+            <div class="row"><dt>給与（研修中）</dt><dd>時給 1,250円</dd></div>
+            <div class="row"><dt>給与（研修後）</dt><dd>セッションフィー 3,000円 / 1セッション（60分）</dd></div>
+            <div class="row"><dt>研修期間</dt><dd>2週間〜1ヶ月程度</dd></div>
+            <div class="row"><dt>勤務時間</dt><dd>9:00〜21:30の間でシフト調整（休憩2時間）<br>※各自休憩を取る形です</dd></div>
+            <div class="row"><dt>休日・休暇</dt><dd>完全週休2日<br>週休2日OK<br>週休1日OK</dd></div>
+            <div class="row"><dt>勤務地</dt><dd>Dr.core 月島店（東京都中央区）</dd></div>
+            <div class="row"><dt>福利厚生</dt><dd>施設利用可 / FC独立・開業支援制度あり</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section final" id="entry">
+        <div class="inner">
+          <p class="label">LET'S TALK</p>
+          <h2>まずは、話しませんか。</h2>
+          <p class="lead">選考の前に、お互いのことを知る時間を大切にしています。興味はあるけど、自分に合うかわからない段階でも歓迎です。</p>
+          <div class="stack">
+            <article class="card">
+              <span class="num">一次エントリー（推奨）</span>
+              <h3>カジュアル面談に申し込む</h3>
+              <p class="lead">選考ではありません。Dr.coreのことをもっと知りたい方はまずここから。</p>
+              <a class="btn primary" href="https://utage-system.com/line/open/EHWMMCpx5nHg" target="_blank" rel="noopener noreferrer">LINEで話を聞いてみる</a>
+            </article>
+            <article class="card">
+              <span class="num">正式応募</span>
+              <h3>LINEから応募する</h3>
+              <p class="lead">すでに意志が固まっている方は、こちらから正式にご応募ください。</p>
+              <a class="btn secondary" href="https://utage-system.com/line/open/EHWMMCpx5nHg" target="_blank" rel="noopener noreferrer">LINEから応募する</a>
+            </article>
+          </div>
+          <div class="flow">
+            <div class="flow-step">
+              <span class="dot">01</span>
+              <div class="flow-body"><strong>LINEでエントリー</strong><p>カジュアル面談・正式応募、どちらもLINEから受け付けています。</p></div>
+            </div>
+            <div class="flow-step">
+              <span class="dot">02</span>
+              <div class="flow-body"><strong>WEB面談</strong><p>オンラインで会社説明と質疑応答を行います。</p></div>
+            </div>
+            <div class="flow-step">
+              <span class="dot">03</span>
+              <div class="flow-body"><strong>最終面接</strong><p>Dr.core月島店にて、対面での面接を行います。</p></div>
+            </div>
+            <div class="flow-step">
+              <span class="dot">04</span>
+              <div class="flow-body"><strong>内定・入社日調整</strong><p>エントリーから内定まで、最短2週間を目安にご連絡します。</p></div>
+            </div>
+          </div>
+          <section class="services" id="services" aria-labelledby="services-title">
+            <p class="label">OUR SERVICES</p>
+            <h3 id="services-title">展開中のサービス</h3>
+            <p class="lead">Dr.coreは、世代や目的に合わせて複数のサービスを展開しています。ひとつの店舗で終わらない、広がりのあるブランドです。</p>
+            <div class="service-grid">
+              <a class="service-card" href="https://drcore.jp/" target="_blank" rel="noopener noreferrer">
+                <div class="service-media">
+                  <img src="assets/service-personal.png" alt="Dr.core Personal" decoding="async" width="600" height="400">
+                </div>
+                <div class="service-content">
+                  <div>
+                    <strong>Dr.core Personal</strong>
+                    <span class="service-desc">大人向けパーソナル</span>
+                  </div>
+                  <span class="service-arrow">→</span>
+                </div>
+              </a>
+              <a class="service-card" href="https://drcore-u18.manus.space" target="_blank" rel="noopener noreferrer">
+                <div class="service-media">
+                  <img src="assets/first-view-u18.png" alt="Dr.core U18" decoding="async" width="600" height="400">
+                </div>
+                <div class="service-content">
+                  <div>
+                    <strong>Dr.core U18</strong>
+                    <span class="service-desc">10〜18歳向けパーソナル</span>
+                  </div>
+                  <span class="service-arrow">→</span>
+                </div>
+              </a>
+              <a class="service-card" href="https://drcore-woman2.manus.space" target="_blank" rel="noopener noreferrer">
+                <div class="service-media">
+                  <img src="assets/service-woman.png" alt="Dr.core Woman" decoding="async" width="600" height="400">
+                </div>
+                <div class="service-content">
+                  <div>
+                    <strong>Dr.core Woman</strong>
+                    <span class="service-desc">50歳以上の女性向けグループレッスン</span>
+                  </div>
+                  <span class="service-arrow">→</span>
+                </div>
+              </a>
+              <a class="service-card" href="https://jr.drcore.jp/" target="_blank" rel="noopener noreferrer">
+                <div class="service-media">
+                  <img src="assets/service-jr.png" alt="Dr.core Jr" decoding="async" width="600" height="400">
+                </div>
+                <div class="service-content">
+                  <div>
+                    <strong>Dr.core Jr</strong>
+                    <span class="service-desc">子供向け運動教室</span>
+                  </div>
+                  <span class="service-arrow">→</span>
+                </div>
+              </a>
+            </div>
+            <a class="service-card social-card" href="https://www.instagram.com/dr.core_gym" target="_blank" rel="noopener noreferrer">
+              <div class="service-content">
+                <div>
+                  <strong>Dr.core 公式Instagram</strong>
+                  <span class="service-desc">店舗の雰囲気やトレーニングの様子を見る</span>
+                </div>
+                <span class="service-arrow">→</span>
+              </div>
+            </a>
+          </section>
+          <section class="access" id="access" aria-labelledby="access-title">
+            <p class="label">ACCESS</p>
+            <h3 id="access-title">Dr.core月島店のアクセス</h3>
+            <div class="map-card">
+              <a class="map-link" href="https://maps.app.goo.gl/UdSTGNKdngoF4Wqn6" target="_blank" rel="noopener noreferrer">マップで開く ↗</a>
+              <iframe
+                title="Dr.core月島店 Googleマップ"
+               
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps?q=%E3%83%91%E3%83%BC%E3%82%BD%E3%83%8A%E3%83%AB%E3%82%B8%E3%83%A0%20Dr.core%20%E6%9C%88%E5%B3%B6%E5%BA%97&output=embed"></iframe>
+              <div class="map-label">
+                <strong>パーソナルジム Dr.core 月島店</strong>
+                <span>月島駅から徒歩3分。面接・最終面接はこちらで行います。</span>
+              </div>
+            </div>
+            <dl class="access-list">
+              <div class="access-row">
+                <dt>住所</dt>
+                <dd>東京都中央区佃2-5-13<br>スカイコートパレス月島102</dd>
+              </div>
+              <div class="access-row">
+                <dt>アクセス</dt>
+                <dd>東京メトロ有楽町線 / 都営地下鉄大江戸線「月島駅」より徒歩3分</dd>
+              </div>
+              <div class="access-row">
+                <dt>電話</dt>
+                <dd>03-3520-8337</dd>
+              </div>
+              <div class="access-row">
+                <dt>営業時間</dt>
+                <dd>10:00〜22:00</dd>
+              </div>
+            </dl>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="brand">Dr.core</div>
+      <p>心から笑える毎日を作る</p>
+      <div class="copyright">© 2025 Dr.core. All rights reserved.</div>
+    </footer>
+  </div>
+
+  <a class="floating-cta" href="https://utage-system.com/line/open/EHWMMCpx5nHg" target="_blank" rel="noopener noreferrer"><span class="line-icon">LINE</span>まずは話を聞いてみる</a>
+  <script>
+    const floatingCta = document.querySelector(".floating-cta");
+    const menuButton = document.querySelector(".menu");
+    const navPanel = document.querySelector(".nav-panel");
+
+    const closeMenu = () => {
+      menuButton.setAttribute("aria-expanded", "false");
+      menuButton.setAttribute("aria-label", "メニューを開く");
+      navPanel.classList.remove("is-open");
+    };
+
+    menuButton.addEventListener("click", () => {
+      const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+      menuButton.setAttribute("aria-expanded", String(!isOpen));
+      menuButton.setAttribute("aria-label", isOpen ? "メニューを開く" : "メニューを閉じる");
+      navPanel.classList.toggle("is-open", !isOpen);
+    });
+
+    navPanel.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", closeMenu);
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") closeMenu();
+    });
+
+    document.addEventListener("click", (event) => {
+      const clickedInsideMenu = navPanel.contains(event.target) || menuButton.contains(event.target);
+      if (!clickedInsideMenu) closeMenu();
+    });
+
+    const updateFloatingCta = () => {
+      floatingCta.classList.toggle("is-visible", window.scrollY > window.innerHeight * .9);
+    };
+    updateFloatingCta();
+    window.addEventListener("scroll", updateFloatingCta, { passive: true });
+  </script>
+
+</body>
+</html>
