@@ -1024,6 +1024,71 @@
       color: var(--text);
     }
 
+    .team-video {
+      margin-top: 28px;
+      padding: 18px;
+      border: 1px solid rgba(29,185,84,.28);
+      border-radius: 20px;
+      background:
+        radial-gradient(110% 100% at 0% 0%, rgba(29,185,84,.18), rgba(29,185,84,0) 48%),
+        linear-gradient(145deg, #0d1f38 0%, #071020 100%);
+      box-shadow: 0 22px 52px rgba(10,22,40,.24);
+    }
+
+    .team-video-head {
+      margin-bottom: 14px;
+    }
+
+    .team-video-head .label {
+      margin-bottom: 8px;
+    }
+
+    .team-video-head h3 {
+      margin-bottom: 8px;
+      color: var(--text);
+      font-size: 22px;
+      line-height: 1.45;
+    }
+
+    .team-video-head p {
+      margin-bottom: 0;
+      color: rgba(245,245,240,.72);
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    .video-frame {
+      position: relative;
+      overflow: hidden;
+      border-radius: 16px;
+      background: #000;
+      border: 1px solid rgba(255,255,255,.12);
+      box-shadow: 0 18px 42px rgba(0,0,0,.36);
+    }
+
+    .video-frame video {
+      width: 100%;
+      display: block;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      background: #000;
+    }
+
+    .team-video .btn {
+      margin-top: 16px;
+      box-shadow: 0 12px 28px rgba(29,185,84,.28);
+    }
+
+    .section.light .team-video h3,
+    .section.light .team-video p,
+    .section.light .team-video strong {
+      color: var(--text);
+    }
+
+    .section.light .team-video-head p {
+      color: rgba(245,245,240,.72);
+    }
+
     .salary-headline {
       position: relative;
       margin: 28px 0 18px;
@@ -1662,6 +1727,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </div>
             </article>
           </div>
+          <div class="team-video">
+            <div class="team-video-head">
+              <p class="label">MOVIE INTERVIEW</p>
+              <h3>現場の空気を、動画で見る。</h3>
+              <p>文章だけでは伝わりきらない、Dr.coreで働く人の表情や空気感をまとめました。</p>
+            </div>
+            <div class="video-frame">
+              <video controls playsinline preload="metadata">
+                <source src="assets/pv.mp4" type="video/mp4">
+                お使いのブラウザでは動画を再生できません。
+              </video>
+            </div>
+            <a class="btn primary" href="https://utage-system.com/line/open/EHWMMCpx5nHg" target="_blank" rel="noopener noreferrer">LINEから続きを見る</a>
+          </div>
         </div>
       </section>
 
@@ -1963,7 +2042,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <span class="service-arrow">→</span>
                 </div>
               </a>
-              <a class="service-card" href="https://drcore-u18.manus.space" target="_blank" rel="noopener noreferrer">
+              <a class="service-card" href="https://dr-core-u18-lp.netlify.app/" target="_blank" rel="noopener noreferrer">
                 <div class="service-media">
                   <img src="assets/first-view-u18.png" alt="Dr.core U18" decoding="async" width="600" height="400">
                 </div>
@@ -1975,7 +2054,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <span class="service-arrow">→</span>
                 </div>
               </a>
-              <a class="service-card" href="https://drcore-woman2.manus.space" target="_blank" rel="noopener noreferrer">
+              <a class="service-card" href="https://dr-core-woman.netlify.app/" target="_blank" rel="noopener noreferrer">
                 <div class="service-media">
                   <img src="assets/service-woman.png" alt="Dr.core Woman" decoding="async" width="600" height="400">
                 </div>
