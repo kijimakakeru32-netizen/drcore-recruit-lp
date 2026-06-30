@@ -1024,46 +1024,98 @@
       color: var(--text);
     }
 
-    .team-video {
-      margin-top: 28px;
-      padding: 18px;
-      border: 1px solid rgba(29,185,84,.28);
-      border-radius: 20px;
+    .movie-section {
+      padding-top: 48px;
+      padding-bottom: 64px;
       background:
-        radial-gradient(110% 100% at 0% 0%, rgba(29,185,84,.18), rgba(29,185,84,0) 48%),
-        linear-gradient(145deg, #0d1f38 0%, #071020 100%);
-      box-shadow: 0 22px 52px rgba(10,22,40,.24);
+        radial-gradient(100% 76% at 50% 0%, rgba(29,185,84,.13), rgba(29,185,84,0) 54%),
+        linear-gradient(180deg, #071020 0%, #0a1628 100%);
+    }
+
+    .team-video {
+      position: relative;
+      margin-top: 0;
+      padding: 18px;
+      overflow: hidden;
+      border: 1px solid rgba(29,185,84,.32);
+      border-radius: 24px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.075), rgba(255,255,255,.02)),
+        linear-gradient(145deg, rgba(13,31,56,.96) 0%, rgba(7,16,32,.98) 100%);
+      box-shadow:
+        0 28px 70px rgba(0,0,0,.46),
+        inset 0 1px 0 rgba(255,255,255,.08);
+      isolation: isolate;
+    }
+
+    .team-video::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background:
+        linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px) 0 0 / 36px 36px,
+        linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px) 0 0 / 36px 36px;
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,.7), transparent 62%);
     }
 
     .team-video-head {
-      margin-bottom: 14px;
+      position: relative;
+      margin-bottom: 18px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid rgba(255,255,255,.1);
     }
 
     .team-video-head .label {
       margin-bottom: 8px;
     }
 
+    .team-video-head h2,
     .team-video-head h3 {
-      margin-bottom: 8px;
+      margin-bottom: 10px;
       color: var(--text);
-      font-size: 22px;
-      line-height: 1.45;
+      font-size: clamp(28px, 8vw, 36px);
+      line-height: 1.14;
+      letter-spacing: .01em;
+    }
+
+    .team-video-head .radio-title {
+      font-size: clamp(25px, 7vw, 31px);
+      line-height: 1.08;
+      white-space: nowrap;
     }
 
     .team-video-head p {
       margin-bottom: 0;
-      color: rgba(245,245,240,.72);
-      font-size: 13px;
+      color: rgba(245,245,240,.78);
+      font-size: 14px;
       line-height: 1.8;
     }
 
     .video-frame {
       position: relative;
       overflow: hidden;
-      border-radius: 16px;
+      border-radius: 20px;
       background: #000;
-      border: 1px solid rgba(255,255,255,.12);
-      box-shadow: 0 18px 42px rgba(0,0,0,.36);
+      border: 1px solid rgba(255,255,255,.16);
+      box-shadow: 0 22px 52px rgba(0,0,0,.44);
+    }
+
+    .video-frame::before {
+      content: "WATCH";
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      z-index: 2;
+      padding: 7px 11px;
+      border-radius: 999px;
+      color: #fff;
+      background: rgba(7,16,32,.72);
+      border: 1px solid rgba(255,255,255,.16);
+      backdrop-filter: blur(10px);
+      font-size: 10px;
+      font-weight: 950;
+      letter-spacing: .12em;
     }
 
     .video-frame video {
@@ -1075,10 +1127,12 @@
     }
 
     .team-video .btn {
-      margin-top: 16px;
-      box-shadow: 0 12px 28px rgba(29,185,84,.28);
+      margin-top: 18px;
+      min-height: 56px;
+      box-shadow: 0 16px 36px rgba(29,185,84,.34);
     }
 
+    .section.light .team-video h2,
     .section.light .team-video h3,
     .section.light .team-video p,
     .section.light .team-video strong {
@@ -1625,15 +1679,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </header>
     <nav class="nav-panel" id="global-menu" aria-label="ページ内メニュー">
       <a href="#top"><span>01</span><strong>トップ</strong></a>
-      <a href="#founder"><span>02</span><strong>代表メッセージ</strong></a>
-      <a href="#offers"><span>03</span><strong>Dr.coreで得られるもの</strong></a>
-      <a href="#who"><span>04</span><strong>求める人物像</strong></a>
-      <a href="#career"><span>05</span><strong>キャリアロードマップ</strong></a>
-      <a href="#team"><span>06</span><strong>チームの声</strong></a>
-      <a href="#requirements"><span>07</span><strong>待遇・募集要項</strong></a>
-      <a href="#entry"><span>08</span><strong>エントリー</strong></a>
-      <a href="#services"><span>09</span><strong>展開中のサービス</strong></a>
-      <a href="#access"><span>10</span><strong>アクセス</strong></a>
+      <a href="#movie"><span>02</span><strong>動画インタビュー</strong></a>
+      <a href="#founder"><span>03</span><strong>代表メッセージ</strong></a>
+      <a href="#offers"><span>04</span><strong>Dr.coreで得られるもの</strong></a>
+      <a href="#who"><span>05</span><strong>求める人物像</strong></a>
+      <a href="#career"><span>06</span><strong>キャリアロードマップ</strong></a>
+      <a href="#team"><span>07</span><strong>チームの声</strong></a>
+      <a href="#requirements"><span>08</span><strong>待遇・募集要項</strong></a>
+      <a href="#entry"><span>09</span><strong>エントリー</strong></a>
+      <a href="#services"><span>10</span><strong>展開中のサービス</strong></a>
+      <a href="#access"><span>11</span><strong>アクセス</strong></a>
     </nav>
 
     <main>
@@ -1658,6 +1713,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <a class="btn primary" href="https://utage-system.com/line/open/EHWMMCpx5nHg" target="_blank" rel="noopener noreferrer">まずカジュアルに話を聞く（LINE）</a>
               <a class="btn secondary" href="#requirements">募集要項を見る</a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section movie-section" id="movie">
+        <div class="inner">
+          <div class="team-video">
+            <div class="team-video-head">
+              <p class="label">MOVIE INTERVIEW</p>
+              <h2 class="radio-title">Dr.core Radio</h2>
+              <p>トレーナーである高倉さんにインタビュー！<br>これまでのキャリアやDr.coreに対する思いなど語ってもらいました！</p>
+            </div>
+            <div class="video-frame">
+              <video controls playsinline muted preload="metadata">
+                <source src="assets/pv.mp4" type="video/mp4">
+                お使いのブラウザでは動画を再生できません。
+              </video>
+            </div>
+            <a class="btn primary" href="https://utage-system.com/line/open/EHWMMCpx5nHg" target="_blank" rel="noopener noreferrer">LINEから続きを見る</a>
           </div>
         </div>
       </section>
@@ -1726,20 +1800,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <p>大きな組織では絶対に得られない、創業期にしかない手触りと熱量が、ここにはあります。</p>
               </div>
             </article>
-          </div>
-          <div class="team-video">
-            <div class="team-video-head">
-              <p class="label">MOVIE INTERVIEW</p>
-              <h3>現場の空気を、動画で見る。</h3>
-              <p>文章だけでは伝わりきらない、Dr.coreで働く人の表情や空気感をまとめました。</p>
-            </div>
-            <div class="video-frame">
-              <video controls playsinline preload="metadata">
-                <source src="assets/pv.mp4" type="video/mp4">
-                お使いのブラウザでは動画を再生できません。
-              </video>
-            </div>
-            <a class="btn primary" href="https://utage-system.com/line/open/EHWMMCpx5nHg" target="_blank" rel="noopener noreferrer">LINEから続きを見る</a>
           </div>
         </div>
       </section>
@@ -2171,6 +2231,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     };
     updateFloatingCta();
     window.addEventListener("scroll", updateFloatingCta, { passive: true });
+
+    const radioVideo = document.querySelector("#movie video");
+    if (radioVideo) {
+      radioVideo.muted = true;
+      radioVideo.playsInline = true;
+
+      const playRadioVideo = () => {
+        const playPromise = radioVideo.play();
+        if (playPromise) {
+          playPromise.catch(() => {});
+        }
+      };
+
+      if ("IntersectionObserver" in window) {
+        const videoObserver = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              playRadioVideo();
+            } else {
+              radioVideo.pause();
+            }
+          });
+        }, { threshold: .45 });
+
+        videoObserver.observe(radioVideo);
+      }
+    }
   </script>
 
 </body>
